@@ -1,0 +1,17 @@
+.welcome {
+  background     : rgba(245, 245, 245, 0.902);
+  backdrop-filter: blur(15px);
+  margin         : 5% 2%;
+  border-radius  : 10px;
+}
+
+.about {
+  text-align   : center;
+  margin-inline: auto;
+}
+
+.info {
+  font-size     : 18px;
+  padding       : 15px 20px;
+  letter-spacing: 0.3px;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Header</title>
+    <link href="./Style/Homepage/General.css" rel="stylesheet" />
+    <link href="./Style/Homepage/Header.css" rel="stylesheet" />
+    <link href="./Style/Homepage/Welcome.css" rel="stylesheet" />
+    <link href="./Style/Homepage/Project.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/36bed4b74a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./Js/nav-button.js" defer></script>
+    <script src="./Js/projects.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="inner flex">
+        <div class="logo">
+          <h1><span class="bold">Bhawesh Agarwal</span></h1>
+        </div>
+        <button
+          class="mobile-nav-toggle"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Menu</span>
+        </button>
+
+        <nav>
+          <ul
+            id="primary-navigation"
+            data-visible="false"
+            class="primary-navigation flex"
+          >
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="welcome">
+      <div class="about" id="about">
+        <h2 class="header">ABOUT ME</h2>
+        <p class="info">
+          I am a dedicated and innovative game developer with more than a year
+          of hands-on experience in Unity game development. Proficient in C# and
+          C++ programming languages, I have crafted immersive and engaging
+          gaming experiences that showcase my ability to design captivating
+          gameplay mechanics and ensure a seamless user experience. My extensive
+          experience has honed my skills and expertise, making me a valuable
+          asset to any game development team. I am a quick learner and a
+          collaborative team player, eager to contribute my technical prowess
+          and creativity to the world of game development.<br />
+        </p>
+      </div>
+    </div>
+    <div class="projects" >
+      <h2 class="header">projects</h2>
+      <div class="projectCardHolder flexCenter" id="project">
+      </div>
+    </div>
+  </body>
+</html>

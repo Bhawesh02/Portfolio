@@ -11,9 +11,19 @@ class Project {
     const projectDiv = document.getElementById("project");
     const projectCardDiv = this.createProjectDiv(projectDiv);
     const contentDiv = this.createContentDiv(projectCardDiv);
-    this.createImageDiv(contentDiv);
-    this.createProjectTitle(contentDiv);
+    const projectCoverImage = this.createImageDiv(contentDiv);
+    const projectTitle =this.createProjectTitle(contentDiv);
     this.createHuperlinks(projectCardDiv);
+    if (this.pageUrl != "null") {
+      console.log(this.pageUrl);
+      let x= this.pageUrl;
+      projectTitle.addEventListener("click", function () {
+        window.location.href = x;
+      });
+      projectCoverImage.addEventListener("click", function () {
+        window.location.href = x;
+      });
+    }
   }
 
   createProjectDiv(projectDiv) {
@@ -37,12 +47,14 @@ class Project {
     const img = document.createElement("img");
     img.src = this.imageUrl;
     coverImageDev.appendChild(img);
+    return coverImageDev;
   }
   createProjectTitle(contentDiv) {
     const projectTitle = document.createElement("h3");
     projectTitle.classList.add("projectTitle");
     projectTitle.innerHTML = this.name;
     contentDiv.append(projectTitle);
+    return projectTitle;
   }
   createHuperlinks(projectCardDiv) {
     var sctClass = document.createElement("ul");
@@ -87,7 +99,7 @@ var projects = [
     "https://github.com/Bhawesh02/Slime-Slaughter-Wave-Wars",
     "https://bhawesh02.itch.io/slime-slaughter-wave-wars",
     "https://www.loom.com/share/70ae88a73d8b445e933a51e54ebbf9b3",
-    "null",
+    "../ProjectsHtml/SlimeSlaughter.html",
     "null"
   ),
   new Project(

@@ -1,0 +1,21 @@
+.projectContentContainer {
+    margin-inline  : 5%;
+    background     : rgba(245, 245, 245, 0.902);
+    backdrop-filter: blur(15px);
+    margin         : 5% 2%;
+    border-radius  : 10px;
+}
+
+.projectTitle {
+    text-align: center;
+    font-size : 32px;
+}
+
+.projectContent {
+    margin-top: 2%;
+    padding   : 2%;
+}
+
+.projectContent .contentTitle {
+    font-size: 26px;
+}

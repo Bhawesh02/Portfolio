@@ -9,13 +9,28 @@
 .projectTitle {
     text-align: center;
     font-size : 32px;
+    padding-top: 2%;
 }
 
 .projectContent {
-    margin-top: 2%;
-    padding   : 2%;
+    padding-inline: 2%;
+    padding-bottom: 2%;
 }
 
-.projectContent .contentTitle {
+.projectContent .content {
+    margin-top: 3%;
+    line-height: 1.6rem;
+    text-align: justify;
+}
+
+.projectContent .content .contentTitle {
     font-size: 26px;
+}
+
+.projectContent .content .conentInfo {
+    margin-top : 2%;
+    font-size  : 20px;
+}
+.projectContent .content .conentInfo a{
+    color:black;
 }

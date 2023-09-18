@@ -1,0 +1,35 @@
+footer {
+    margin-top      : 5%;
+    width           : 100%;
+    background-color: rgb(71, 62, 62);
+}
+
+.footer-content {
+    justify-content: space-between;
+    margin-inline  : 5%;
+}
+
+.footerHeader {
+    padding-top   : 1rem;
+    color         : white;
+    font-weight   : bolder;
+    text-transform: uppercase;
+}
+
+footer li,
+a {
+    padding-top: 10px;
+    color      : white;
+    transition : 0.5s;
+}
+
+.footer_info:hover {
+    letter-spacing: 1px;
+    transition    : 0.5s;
+}
+
+.copyright {
+    padding-top: 2rem;
+    text-align : center;
+    color      : white;
+}

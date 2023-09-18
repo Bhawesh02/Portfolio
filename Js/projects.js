@@ -108,7 +108,7 @@ var projects = [
   ),
   new Project(
     "Co-op Snake 2D",
-    "https://github.com/Bhawesh02/Co-Op-Snake-2D#description",
+    "https://github.com/Bhawesh02/Co-Op-Snake-2D",
     "https://bhawesh02.itch.io/snake-2d",
     "null",
     "null",

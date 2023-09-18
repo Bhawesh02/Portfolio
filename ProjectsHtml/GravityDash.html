@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gravity Dash</title>
+    <link href="../Style/Common/General.css" rel="stylesheet" />
+    <link href="../Style/Common/Header.css" rel="stylesheet" />
+    <link href="../Style/Projects/ProjectContent.css" rel="stylesheet" />
+    <link href="../Style/Common/Footer.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/36bed4b74a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="inner flex">
+        <div class="logo">
+          <h1><span class="bold">Bhawesh Agarwal</span></h1>
+        </div>
+        <button
+          class="mobile-nav-toggle"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Menu</span>
+        </button>
+
+        <nav>
+          <ul
+            id="primary-navigation"
+            data-visible="false"
+            class="primary-navigation flex"
+          >
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="projectContentContainer">
+      <h2 class="projectTitle bold">Gravity Dash</h2>
+      <div class="projectContent">
+        <div class="content">
+          <h3 class="contentTitle">Discription</h3>
+          <p class="conentInfo">
+            The Gravity Dash game is a 2D platformer developed in Unity. The
+            project includes various gameplay mechanics, UI elements, and level
+            design features that enhance the overall player experience.
+          </p>
+        </div>
+        <div class="content">
+          <h3 class="contentTitle">Features</h3>
+          <p class="conentInfo">
+            <span class="bold">Player Mechanics:</span> Responsive movement,
+            gravity switching, and collision interactions. <br /><br /><span
+              class="bold"
+              >Level Progression:</span
+            >
+            Dynamic unlocking of levels based on player progress.<br /><br /><span
+              class="bold"
+              >Interactive UI:
+            </span>
+            Elements for level completion, player death, and level selection.<br /><br /><span
+              class="bold"
+              >Elements for level completion, player death, and level
+              selection.</span
+            >
+            Unique effects such as extra lives, checkpoints, and mass increase.
+          </p>
+        </div>
+        <div class="content">
+          <h3 class="contentTitle">Coding Architecture</h3>
+          <p class="conentInfo">
+            <span class="bold">MVC (Model-View-Controller) Architecture</span
+            ><br />
+            The project follows the MVC architectural pattern, which separates
+            the application into three interconnected components:<br />
+            <span class="bold">Model:</span> Represents the game's data and
+            business logic. Includes classes for the player, pickups, and game
+            state.<br />
+            <span class="bold">View:</span> Handles the visual aspects of the
+            game, such as UI elements, player animations, and rendering. The
+            PlayerView script, for example, manages the player's visual
+            components.<br />
+            <span class="bold">Controller:</span> Controls the game's behaviour
+            and user input. The PlayerController script, for instance, manages
+            the player's actions and interactions.<br /><br /><span class="bold"
+              >Singleton Pattern</span
+            ><br />Several components in the project, such as the GameManager,
+            EventService, and UIService, implement the Singleton pattern:<br />
+            <span class="bold">GameManager: :</span> Manages game state, scene
+            transitions, and game elements such as platforms and pickups.<br />
+            <span class="bold">EventService:</span> Handles game events like
+            player death, pickup collection, and level completion using events
+            and delegates.<br />
+            <span class="bold">UIService:</span> Manages user interface elements
+            and their interactions, including restart buttons, lobby buttons,
+            and level completion UI.<br /><br /><span class="bold"
+              >Observer Pattern</span
+            ><br />The Observer pattern is utilized through the EventService. It
+            allows decoupled components to subscribe to and respond to events
+            triggered by other parts of the game. For instance:<br />
+            Subscribing to the PlayerDied event displays the player death UI.<br />
+            Subscribing to the PickupCollected event updates UI elements and
+            triggers game effects.<br />
+            Subscribing to the LevelCompleted event displays level completion
+            UI.<br /><br /><span class="bold">Scriptable Object</span><br />
+            Scriptable Objects are used to store and manage game data and
+            configurations:<br />
+            <span class="bold">PlayerScriptableObject: </span>Contains
+            player-related configuration data such as speed, mass change, and
+            increased mass duration. This allows for easy tuning and balancing
+            of player mechanics.
+          </p>
+        </div>
+        <div class="content">
+          <h3 class="contentTitle">GamePlay Video</h3>
+          <div class="conentInfo VideoContainer">
+            <iframe src="" allowfullscreen> </iframe>
+          </div>
+        </div>
+        <div class="content">
+          <h3 class="contentTitle">Play Game</h3>
+          <p class="conentInfo">
+            <span class="bold">Itch.io :</span>
+
+            <a href="https://bhawesh02.itch.io/gravity-dash" target="_blank"
+              >Play it</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="flex footer-content">
+        <div class="quicklink">
+          <h3 class="quick footerHeader">QUICK LINKS</h3>
+          <ul>
+            <li class="footer_info">
+              <a href="#info" class="about-us">About Me</a>
+            </li>
+            <li class="footer_info"><a href="#papainfo">Projects</a></li>
+          </ul>
+        </div>
+        <div class="contactMe">
+          <h3 class="contact footerHeader">CONTACT me</h3>
+          <ul>
+            <li class="footer_info">
+              <a href="tel:+919661711088"
+                ><i class="fas fa-phone"></i> +91-9661711088</a
+              >
+            </li>
+            <li class="footer_info">
+              <a href="mailto: bhaweshagarwal02@gmail.com"
+                ><i class="fas fa-envelope"></i> Bhaweshagarwal02@gmail.com</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="vistor_count">
+          <h3 class="footerHeader">VISITOR COUNT</h3>
+          <ul>
+            <li class="footer_info" id="count">0</li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright">
+        Copyright BHAWESH AGARWAL. All Rights Reserved Agarwal
+      </p>
+    </footer>
+  </body>
+</html>

@@ -107,7 +107,7 @@ var projects = [
     "https://github.com/Bhawesh02/Gravity-Dash",
     "https://bhawesh02.itch.io/gravity-dash",
     "null",
-    "null",
+    "../ProjectsHtml/GravityDash.html",
     "null"
   ),
   new Project(

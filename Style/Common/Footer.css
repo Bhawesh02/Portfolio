@@ -9,6 +9,10 @@ footer {
     margin-inline  : 5%;
 }
 
+.footer-content ul {
+    list-style: none;
+}
+
 .footerHeader {
     padding-top   : 1rem;
     color         : white;
@@ -24,7 +28,7 @@ a {
 }
 
 .footer_info {
-    text-transform:capitalize;
+    text-transform: capitalize;
 }
 
 .footer_info:hover {

@@ -100,15 +100,15 @@ var projects = [
     "https://bhawesh02.itch.io/slime-slaughter-wave-wars",
     "https://www.loom.com/share/70ae88a73d8b445e933a51e54ebbf9b3",
     "../ProjectsHtml/SlimeSlaughter.html",
-    "null"
+    "../Image/Slime.jpeg"
   ),
   new Project(
     "Gravity Dash",
     "https://github.com/Bhawesh02/Gravity-Dash",
     "https://bhawesh02.itch.io/gravity-dash",
-    "null",
+    "https://www.loom.com/share/e7169c94b1c049009b688c6eddc358ef",
     "../ProjectsHtml/GravityDash.html",
-    "null"
+    "../Image/Gravity Dash.jpeg"
   ),
   new Project(
     "Battle Tank",
@@ -116,7 +116,7 @@ var projects = [
     "null",
     "https://www.loom.com/share/abfe2aa33e364c23b51dd8b5f77ca2fa?sid",
     "../ProjectsHtml/BattleTank.html",
-    "null"
+    "../Image/Battel Tank.jpeg"
   ),
   new Project(
     "Co-op Snake 2D",
@@ -124,7 +124,7 @@ var projects = [
     "https://bhawesh02.itch.io/snake-2d",
     "https://www.loom.com/share/2337942a26a74f84bbc2c80a2e8bdea7",
     "../ProjectsHtml/Snake2D.html",
-    "null"
+    "../Image/Snake.jpeg"
   ),
   new Project(
     "Realm of Heroes: The Murloc Menace",
@@ -132,7 +132,7 @@ var projects = [
     "https://replit.com/@BhaweshAgarwal/MAT-II-Text-based-RPG-Adventure-Game",
     "null",
     "../ProjectsHtml/RealmOfHeroes.html",
-    "null"
+    "../Image/Murlock.jpg"
   ),
 ];
 

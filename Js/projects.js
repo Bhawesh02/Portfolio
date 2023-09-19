@@ -131,7 +131,7 @@ var projects = [
     "https://github.com/Bhawesh02/Realm-of-Heroes-The-Murloc-Menace",
     "https://replit.com/@BhaweshAgarwal/MAT-II-Text-based-RPG-Adventure-Game",
     "null",
-    "../ProjectsHtml/RealmOfHeroes.html",
+    "../RealmOfHeroes.html",
     "../Image/Murlock.jpg"
   ),
 ];

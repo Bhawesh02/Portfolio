@@ -123,7 +123,7 @@ var projects = [
     "https://github.com/Bhawesh02/Co-Op-Snake-2D",
     "https://bhawesh02.itch.io/snake-2d",
     "null",
-    "null",
+    "../ProjectsHtml/Snake2D.html",
     "null"
   ),
   new Project(

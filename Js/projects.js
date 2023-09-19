@@ -122,7 +122,7 @@ var projects = [
     "Co-op Snake 2D",
     "https://github.com/Bhawesh02/Co-Op-Snake-2D",
     "https://bhawesh02.itch.io/snake-2d",
-    "null",
+    "https://www.loom.com/share/2337942a26a74f84bbc2c80a2e8bdea7",
     "../ProjectsHtml/Snake2D.html",
     "null"
   ),

@@ -45,3 +45,9 @@
 .projectContent .content .conentInfo a {
     color: black;
 }
+.conentInfo li{
+    padding-top: 2%;
+}
+.conentInfo ol{
+    padding-left: 2%;
+}

@@ -99,40 +99,40 @@ var projects = [
     "https://github.com/Bhawesh02/Slime-Slaughter-Wave-Wars",
     "https://bhawesh02.itch.io/slime-slaughter-wave-wars",
     "https://www.loom.com/share/70ae88a73d8b445e933a51e54ebbf9b3",
-    "https://bhawesh02.github.io/Portfolio/ProjectsHtml/SlimeSlaughter.html",
-    "https://bhawesh02.github.io/Portfolio/Image/Slime.jpeg"
+    "./ProjectsHtml/SlimeSlaughter.html",
+    "./Image/Slime.jpeg"
   ),
   new Project(
     "Gravity Dash",
     "https://github.com/Bhawesh02/Gravity-Dash",
     "https://bhawesh02.itch.io/gravity-dash",
     "https://www.loom.com/share/e7169c94b1c049009b688c6eddc358ef",
-    "https://bhawesh02.github.io/Portfolio/ProjectsHtml/GravityDash.html",
-    "https://bhawesh02.github.io/Portfolio/Image/Gravity Dash.jpeg"
+    "./ProjectsHtml/GravityDash.html",
+    "./Image/Gravity Dash.jpeg"
   ),
   new Project(
     "Battle Tank",
     "https://github.com/Bhawesh02/battle-tank-game",
     "null",
     "https://www.loom.com/share/abfe2aa33e364c23b51dd8b5f77ca2fa?sid",
-    "https://bhawesh02.github.io/Portfolio/ProjectsHtml/BattleTank.html",
-    "https://bhawesh02.github.io/Portfolio/Image/Battel Tank.jpeg"
+    "./ProjectsHtml/BattleTank.html",
+    "./Image/Battel Tank.jpeg"
   ),
   new Project(
     "Co-op Snake 2D",
     "https://github.com/Bhawesh02/Co-Op-Snake-2D",
     "https://bhawesh02.itch.io/snake-2d",
     "https://www.loom.com/share/2337942a26a74f84bbc2c80a2e8bdea7",
-    "https://bhawesh02.github.io/Portfolio/ProjectsHtml/Snake2D.html",
-    "https://bhawesh02.github.io/Portfolio/Image/Snake.jpeg"
+    "./ProjectsHtml/Snake2D.html",
+    "./Image/Snake.jpeg"
   ),
   new Project(
     "Realm of Heroes: The Murloc Menace",
     "https://github.com/Bhawesh02/Realm-of-Heroes-The-Murloc-Menace",
     "https://replit.com/@BhaweshAgarwal/MAT-II-Text-based-RPG-Adventure-Game",
     "null",
-    "https://bhawesh02.github.io/Portfolio/ProjectsHtml/RealmOfHeroes.html",
-    "https://bhawesh02.github.io/Portfolio/Image/Murlock.jpg"
+    "./ProjectsHtml/RealmOfHeroes.html",
+    "./Image/Murlock.jpg"
   ),
 ];
 

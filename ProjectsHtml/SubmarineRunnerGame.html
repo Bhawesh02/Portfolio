@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Submarine Runner Game</title>
+    <link href="../Style/Common/General.css" rel="stylesheet" />
+    <link href="../Style/Common/Header.css" rel="stylesheet" />
+    <link href="../Style/Projects/ProjectContent.css" rel="stylesheet" />
+    <link href="../Style/Common/Footer.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/36bed4b74a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="inner flex">
+        <div class="logo">
+          <h1><span class="bold">Bhawesh Agarwal</span></h1>
+        </div>
+        <button
+          class="mobile-nav-toggle"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Menu</span>
+        </button>
+
+        <nav>
+          <ul
+            id="primary-navigation"
+            data-visible="false"
+            class="primary-navigation flex"
+          >
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#project">Projects</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="projectContentContainer">
+      <h2 class="projectTitle bold">Submarine Runner Game</h2>
+      <div class="projectContent">
+        <div class="content">
+          <h3 class="contentTitle">Discription</h3>
+          <p class="conentInfo">
+            Submarine Runner Game is an underwater-themed action game where the
+            player controls a submarine navigating through challenging
+            environments, avoiding obstacles, and using power-ups to survive and
+            defeat AI-controlled submarines while avoiding getting eaten by a
+            shark.
+          </p>
+        </div>
+        <div class="content">
+          <h3 class="contentTitle">GamePlay</h3>
+          <div class="conentInfo VideoContainer">
+            <iframe
+              width="653"
+              height="1160"
+              src="https://www.youtube.com/embed/wjc8JKgfTDQ"
+              title="Submarine runner gameplay"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+              class="potrait"
+            ></iframe>
+          </div>
+        </div>
+        <div class="content">
+          <h3 class="contentTitle">Gameplay Mechanics</h3>
+          <ul class="conentInfo">
+            <li>
+              <span class="bold">Player Submarine:</span>
+              <ul>
+                <li>
+                  The player can rotate the submarine upward and downward by
+                  pressing the space bar.
+                </li>
+                <li>
+                  Power-ups provide temporary enhancements such as speed boosts,
+                  teleportation, and disabling enemies.
+                  <ul>
+                    <li>
+                      <span class="bold">TURBO:</span> Temporarily boosts the
+                      player's submarine speed.
+                    </li>
+                    <li>
+                      <span class="bold">TELEPORT:</span> Teleports the player
+                      submarine to a new location.
+                    </li>
+                    <li>
+                      <span class="bold">FISHNET:</span> Fires a net projectile
+                      that disables AI submarines.
+                    </li>
+                    <li>
+                      <span class="bold">EMP:</span> Disables nearby AI
+                      submarines with an EMP pulse.
+                    </li>
+                    <li>
+                      <span class="bold">REVERSE_CONTROL:</span> Reverses the
+                      movement controls of AI submarines.
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <span class="bold">AI Submarine:</span>
+              <ul>
+                <li>
+                  The AI submarines have an obstacle avoidance system using AI
+                  sensors that calculate whether to turn up or down based on
+                  obstacles in front of them.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <span class="bold">Shark:</span>
+              <ul>
+                <li>
+                  The shark automatically targets the submarine in front of it
+                  and consumes it when in range.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="content">
+          <h3 class="contentTitle">Design Patterns</h3>
+          <ul class="conentInfo">
+            <li>
+              <span class="bold">Observer Pattern:</span> Power-ups and game
+              events use the Observer pattern to notify relevant entities (like
+              the player or AI) when changes occur (e.g., power-up pickup, game
+              over).
+            </li>
+            <li>
+              <span class="bold">Singleton Pattern:</span> The
+              <code>GameManager</code> is implemented as a singleton to ensure
+              only one instance controls the overall game flow, keeping the game
+              state consistent.
+            </li>
+          </ul>
+        </div>
+        <div class="content">
+          <h3 class="contentTitle">Modular Structure</h3>
+          <ul class="conentInfo">
+            <li>
+              <span class="bold">Controllers:</span> Contains scripts for player
+              and AI submarine behavior, game management, and UI controls.
+            </li>
+            <li>
+              <span class="bold">PowerUps:</span> Contains scripts defining each
+              power-up type and its behavior.
+            </li>
+            <li>
+              <span class="bold">Models:</span> Holds data structures and
+              classes for managing submarine states, power-up configurations,
+              and other game models.
+            </li>
+            <li>
+              <span class="bold">Utilities:</span> Contains helper scripts for
+              tasks like event management, and sensor systems.
+            </li>
+          </ul>
+        </div>
+        <div class="content">
+          <h3 class="contentTitle">Scalability & Extensibility</h3>
+          <ul class="conentInfo">
+            <li>
+              The architecture is designed with scalability in mind, allowing
+              for:
+              <ul>
+                <li>
+                  Adding new power-ups and AI behaviors easily by creating new
+                  classes and extending existing systems.
+                </li>
+                <li>
+                  Expanding the game world by introducing new types of
+                  obstacles, power-ups, and submarine types without disrupting
+                  the existing codebase.
+                </li>
+              </ul>
+            </li>
+            <li>
+              The modular approach ensures that each component of the game is
+              loosely coupled and easy to test individually, making the
+              development process more efficient and reducing the risk of bugs.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="flex footer-content">
+        <div class="quicklink">
+          <h3 class="quick footerHeader">QUICK LINKS</h3>
+          <ul>
+            <li class="footer_info">
+              <a href="../index.html#about" class="about-us">About Me</a>
+            </li>
+            <li class="footer_info">
+              <a href="../index.html#project">Projects</a>
+            </li>
+          </ul>
+        </div>
+        <div class="contactMe">
+          <h3 class="contact footerHeader">CONTACT me</h3>
+          <ul>
+            <li class="footer_info">
+              <a href="tel:+919661711088"
+                ><i class="fas fa-phone"></i> +91-9661711088</a
+              >
+            </li>
+            <li class="footer_info">
+              <a href="mailto: bhaweshagarwal02@gmail.com"
+                ><i class="fas fa-envelope"></i> Bhaweshagarwal02@gmail.com</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="connectWithMe">
+          <h3 class="contact footerHeader">Connect</h3>
+          <ul>
+            <li class="footer_info">
+              <a href="https://www.linkedin.com/in/bhawesh-agarwal-70b98b113/"
+                ><i class="fa-brands fa-linkedin"></i> Bhawesh Agarwal</a
+              >
+            </li>
+            <li class="footer_info">
+              <a href="https://github.com/Bhawesh02"
+                ><i class="fa-brands fa-github"></i> Bhawesh02</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright">
+        Copyright BHAWESH AGARWAL. All Rights Reserved Agarwal
+      </p>
+    </footer>
+  </body>
+</html>

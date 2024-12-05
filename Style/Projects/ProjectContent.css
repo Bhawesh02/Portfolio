@@ -19,17 +19,22 @@
 }
 
 .projectContent .content {
-    margin-top : 3%;
+    margin-top : 2%;
     line-height: 1.6rem;
     text-align : justify;
+}
+
+.projectContent .content h2.contentTitle {
+    text-align: center;
 }
 
 .projectContent .content .contentTitle {
     font-size: 26px;
 }
 
+
 .projectContent .content .conentInfo {
-    margin-top : 2%;
+    margin-top : 1%;
     font-size  : 20px;
     margin-left: 1.5%;
 }
@@ -45,9 +50,51 @@
 .projectContent .content .conentInfo a {
     color: black;
 }
-.conentInfo li{
+
+.conentInfo li {
     padding-top: 2%;
 }
-.conentInfo ol{
+
+.conentInfo ol {
     padding-left: 2%;
 }
+
+.VideoContainer {
+    position: relative;
+    height: 0px;
+    padding-top: 40%;
+  }
+  
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  iframe.potrait {
+    left: 40%;
+    width: 20%;
+  }
+  
+  iframe.potrait1 {
+    left: 20%;
+    width: 20%;
+  }
+  
+  iframe.potrait2 {
+    left: 60%;
+    width: 20%;
+  }
+  
+  .video-info1 {
+    font-size: 16px;       
+    color: #333;          
+  }
+  .video-info2 {
+    font-size: 16px;       
+    color: #333;          
+  }

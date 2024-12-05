@@ -12,11 +12,11 @@ class Project {
     const projectCardDiv = this.createProjectDiv(projectDiv);
     const contentDiv = this.createContentDiv(projectCardDiv);
     const projectCoverImage = this.createImageDiv(contentDiv);
-    const projectTitle =this.createProjectTitle(contentDiv);
+    const projectTitle = this.createProjectTitle(contentDiv);
     this.createHuperlinks(projectCardDiv);
     if (this.pageUrl != "null") {
       console.log(this.pageUrl);
-      let x= this.pageUrl;
+      let x = this.pageUrl;
       projectTitle.addEventListener("click", function () {
         window.location.href = x;
       });
@@ -94,6 +94,30 @@ class Project {
 }
 
 var projects = [
+  new Project(
+    "Submarine Runner Game",
+    "https://github.com/Bhawesh02/SubmarineRunner",
+    "null",
+    "https://www.youtube.com/shorts/r4XY97JedFg",
+    "./ProjectsHtml/SubmarineRunnerGame.html",
+    "./Image/SubmarineRunnerGame.png"
+  ),
+  new Project(
+    "Car Physics",
+    "https://github.com/Bhawesh02/Car-Physics",
+    "null",
+    "https://www.youtube.com/shorts/r4XY97JedFg",
+    "./ProjectsHtml/CarPhysics.html",
+    "./Image/CarPhysics.png"
+  ),
+  new Project(
+    "Mesh Deformer Tool",
+    "https://github.com/Bhawesh02/Mesh-Deformation.git",
+    "null",
+    "https://www.youtube.com/watch?v=mKKhAUzzRZM",
+    "./ProjectsHtml/MeshDeformer.html",
+    "./Image/MeshDeformer.png"
+  ),
   new Project(
     "Slime Slaughter: Wave Wars",
     "https://github.com/Bhawesh02/Slime-Slaughter-Wave-Wars",

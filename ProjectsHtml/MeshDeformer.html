@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MESH DEFORMER</title>
+    <link href="../Style/Common/General.css" rel="stylesheet" />
+    <link href="../Style/Common/Header.css" rel="stylesheet" />
+    <link href="../Style/Projects/ProjectContent.css" rel="stylesheet" />
+    <link href="../Style/Common/Footer.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/36bed4b74a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="inner flex">
+        <div class="logo">
+          <h1><span class="bold">Bhawesh Agarwal</span></h1>
+        </div>
+        <button
+          class="mobile-nav-toggle"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Menu</span>
+        </button>
+
+        <nav>
+          <ul
+            id="primary-navigation"
+            data-visible="false"
+            class="primary-navigation flex"
+          >
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#project">Projects</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="projectContentContainer">
+      <h2 class="projectTitle bold">MESH DEFORMER</h2>
+      <div class="projectContent">
+        <div class="content">
+          <h3 class="contentTitle">Discription</h3>
+          <p class="conentInfo">
+            The Mesh Deformer Tool is a Unity-based tool designed to modify and
+            manipulate mesh geometry dynamically. Using deformation mechanics,
+            this tool empowers developers and artists to create interactive
+            environments and effects by altering mesh structures directly in the
+            scene during Play, edit or in timeline mode.
+          </p>
+        </div>
+        <div class="content">
+          <h3 class="contentTitle">Working Video</h3>
+          <div class="conentInfo VideoContainer">
+            <iframe
+              width="777"
+              height="437"
+              src="https://www.youtube.com/embed/mKKhAUzzRZM"
+              title="Unity Mesh Deformer"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="content">
+          <h3 class="contentTitle">Features</h3>
+          <ul class="conentInfo">
+            <li>
+              <span class="bold">Dynamic Mesh Deformation:</span>
+              <ul>
+                <li>
+                  Real-time mesh manipulation using
+                  <span class="bold">raycasting</span>.
+                </li>
+                <li>
+                  Multiple deformation modes:
+                  <ul>
+                    <li>
+                      <span class="bold">Deform Mode:</span> Modify mesh
+                      surfaces interactively.
+                    </li>
+                    <li>
+                      <span class="bold">Uniform Mode:</span> Reset mesh to its
+                      original state effortlessly.
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <span class="bold">Customizable Deformation Settings</span>
+              <ul>
+                <li>
+                  Fine-tune
+                  <span class="bold"
+                    >deformation height, radius, and smoothness</span
+                  >
+                  using <span class="bold">Animation Curves</span>.
+                </li>
+                <li>Adjustable deformation axis for precise control.</li>
+              </ul>
+            </li>
+            <li>
+              <span class="bold">Editor & Timeline Support</span>
+              <ul>
+                <li>
+                  <span class="bold">Edit Mode:</span> Apply deformations
+                  directly in the Unity Editor for static setups.
+                </li>
+                <li>
+                  <span class="bold">Timeline Integration:</span> Enable dynamic
+                  deformation animations within Unity's Timeline.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <span class="bold">Custom Mesh Generation</span>
+              <ul>
+                <li>
+                  Dynamically create grid-based meshes with customizable
+                  dimensions and resolution for procedural effects or gameplay
+                  prototyping.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="content">
+          <h3 class="contentTitle">Coding Architecture</h3>
+          <ul class="conentInfo">
+            <li>
+              <span class="bold">Core Components</span>
+              <ul>
+                <li>
+                  <span class="bold">MeshDeformReceiver</span>
+                  <ul>
+                    <li>
+                      Handles deformation logic and applies transformations to
+                      mesh vertices.
+                    </li>
+                    <li>
+                      Supports deformation along multiple axes (e.g., X, Y, Z,
+                      and negative counterparts).
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="bold">MeshDeformer</span>
+                  <ul>
+                    <li>
+                      Implements raycasting logic to detect mesh objects and
+                      apply deformation.
+                    </li>
+                    <li>Includes states for deforming and resetting meshes.</li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="bold">MeshGeneration</span>
+                  <ul>
+                    <li>
+                      Dynamically generates polygonal grid meshes based on
+                      dimensions and resolution set by the user.
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <span class="bold">Scriptable Object for Data Management</span>
+              <ul>
+                <li>
+                  <span class="bold">MeshDeformerData</span>
+                  <ul>
+                    <li>
+                      Centralized storage for deformation parameters like
+                      height, radius, smoothness curves, and layer masks.
+                    </li>
+                    <li>
+                      Simplifies reuse and consistency across multiple mesh
+                      objects.
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <span class="bold">Custom Editors</span>
+              <ul>
+                <li>
+                  <span class="bold">MeshDeformReceiverEditor</span>
+                  <ul>
+                    <li>
+                      Adds an Editor button to reset the mesh directly within
+                      the Inspector.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="bold">MeshDeformerEditor</span>
+                  <ul>
+                    <li>
+                      Provides intuitive scene view tools for configuring
+                      raycast endpoints and deformation parameters.
+                    </li>
+                    <li>
+                      Assigns deformation data efficiently in the Unity
+                      Inspector.
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="flex footer-content">
+        <div class="quicklink">
+          <h3 class="quick footerHeader">QUICK LINKS</h3>
+          <ul>
+            <li class="footer_info">
+              <a href="../index.html#about" class="about-us">About Me</a>
+            </li>
+            <li class="footer_info">
+              <a href="../index.html#project">Projects</a>
+            </li>
+          </ul>
+        </div>
+        <div class="contactMe">
+          <h3 class="contact footerHeader">CONTACT me</h3>
+          <ul>
+            <li class="footer_info">
+              <a href="tel:+919661711088"
+                ><i class="fas fa-phone"></i> +91-9661711088</a
+              >
+            </li>
+            <li class="footer_info">
+              <a href="mailto: bhaweshagarwal02@gmail.com"
+                ><i class="fas fa-envelope"></i> Bhaweshagarwal02@gmail.com</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="connectWithMe">
+          <h3 class="contact footerHeader">Connect</h3>
+          <ul>
+            <li class="footer_info">
+              <a href="https://www.linkedin.com/in/bhawesh-agarwal-70b98b113/"
+                ><i class="fa-brands fa-linkedin"></i> Bhawesh Agarwal</a
+              >
+            </li>
+            <li class="footer_info">
+              <a href="https://github.com/Bhawesh02"
+                ><i class="fa-brands fa-github"></i> Bhawesh02</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright">
+        Copyright BHAWESH AGARWAL. All Rights Reserved Agarwal
+      </p>
+    </footer>
+  </body>
+</html>

@@ -98,7 +98,7 @@ var projects = [
     "Submarine Runner Game",
     "https://github.com/Bhawesh02/SubmarineRunner",
     "null",
-    "https://www.youtube.com/shorts/r4XY97JedFg",
+    "https://www.youtube.com/shorts/wjc8JKgfTDQ",
     "./ProjectsHtml/SubmarineRunnerGame.html",
     "./Image/SubmarineRunnerGame.png"
   ),

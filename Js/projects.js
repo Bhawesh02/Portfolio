@@ -95,6 +95,14 @@ class Project {
 
 var projects = [
   new Project(
+    "Jump Pad Mayhem",
+    "https://github.com/Bhawesh02/Jump-Pad-Mayhem",
+    "null",
+    "https://www.youtube.com/shorts/zajEYe4CAg0",
+    "./ProjectsHtml/JumpPadMayhem.html",
+    "./Image/JumpPadMayhem.png"
+  ),
+  new Project(
     "Submarine Runner Game",
     "https://github.com/Bhawesh02/SubmarineRunner",
     "null",
